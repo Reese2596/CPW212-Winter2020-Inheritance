@@ -23,6 +23,11 @@ namespace Inheritance
     class Book : Product
     {
         public string Author { get; set; }
+
+        public override string ToString()
+        {
+            return base.ToString() + $" writen by {Author}";
+        }
     }
 
     class Software : Product
