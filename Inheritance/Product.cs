@@ -19,4 +19,14 @@ namespace Inheritance
             return $"{code} : {Price}";
         }
     }
+
+    class Book : Product
+    {
+        public string Author { get; set; }
+    }
+
+    class Software : Product
+    {
+        public string Version { get; set; }
+    }
 }
