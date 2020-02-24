@@ -40,8 +40,15 @@ namespace Inheritance
 
         private static void DisplayProduct(Product p)
         {
+            if(p is Book)
+            {
+                Book b = p as Book;
+                Console.WriteLine($"Check out this thrilling story!" +
+                    $" Written by: {b.Author}");
+            }
+
             // AutoGenerates ToString() not neccessary to type(Optional).
-            Console.WriteLine(p.ToString());
+            Console.WriteLine(p.ToString() + "\n");
         }
     }
 }

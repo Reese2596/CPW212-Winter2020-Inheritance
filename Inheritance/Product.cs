@@ -37,7 +37,7 @@ namespace Inheritance
         /// The author of the book. 
         /// Default is Unknown.
         /// </summary>
-        public string Author { get; set; } = "Unknown";
+        public string Author { get; set; } = "Mr. Unknown";
 
         public override string ToString()
         {
