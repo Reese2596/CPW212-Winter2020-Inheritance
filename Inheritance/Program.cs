@@ -10,7 +10,38 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            Product p = new Product("XYZ")
+            {
+                  Code = "Money"
+                , Description = ""
+                , Price = 999.99
+            };
 
+            Book b = new Book("ZYX")
+            {
+                  Code = "ABC123"
+                , Description = ""
+                , Price = 9.99
+                //, Author = "Me"
+            };
+
+            Software s = new Software
+            {
+                Code = "Makayla's Software",
+                Description = "",
+                Price = 119.99,
+                Version = "1.2.3.1"
+            };
+            DisplayProduct(s);
+            DisplayProduct(p);
+            DisplayProduct(b);
+            Console.ReadKey();
+        }
+
+        private static void DisplayProduct(Product p)
+        {
+            // AutoGenerates ToString() not neccessary to type(Optional).
+            Console.WriteLine(p.ToString());
         }
     }
 }
