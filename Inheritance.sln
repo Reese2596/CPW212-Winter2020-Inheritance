@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{7F8E79F3-C628-496F-A460-83F80B4D21CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindFormsInheritance", "WindFormsInheritance\WindFormsInheritance.csproj", "{7CA22EB9-A324-471E-9A2F-CA01C398630A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7F8E79F3-C628-496F-A460-83F80B4D21CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F8E79F3-C628-496F-A460-83F80B4D21CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F8E79F3-C628-496F-A460-83F80B4D21CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA22EB9-A324-471E-9A2F-CA01C398630A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA22EB9-A324-471E-9A2F-CA01C398630A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA22EB9-A324-471E-9A2F-CA01C398630A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA22EB9-A324-471E-9A2F-CA01C398630A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
