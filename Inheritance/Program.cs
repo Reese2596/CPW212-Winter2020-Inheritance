@@ -10,24 +10,24 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            Product p = new Product
+            Product p = new Product("XYZ")
             {
-                  code = "Money"
+                  Code = "Money"
                 , Description = ""
                 , Price = 999.99
             };
 
-            Book b = new Book
+            Book b = new Book("ZYX")
             {
-                  code = "ABC123"
+                  Code = "ABC123"
                 , Description = ""
                 , Price = 9.99
-                , Author = "Me"
+                //, Author = "Me"
             };
 
             Software s = new Software
             {
-                code = "Makayla's Software",
+                Code = "Makayla's Software",
                 Description = "",
                 Price = 119.99,
                 Version = "1.2.3.1"
@@ -40,6 +40,7 @@ namespace Inheritance
 
         private static void DisplayProduct(Product p)
         {
+            // AutoGenerates ToString() not neccessary to type(Optional).
             Console.WriteLine(p.ToString());
         }
     }
