@@ -18,6 +18,8 @@ namespace Inheritance
 
         public double Price { get; set; }
 
+        public virtual string GetDisplayText => Code;
+
         //expression bodied Member
         //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
         public override string ToString() => $"{Code} : {Price}";
@@ -48,6 +50,13 @@ namespace Inheritance
         public Software() : base(null)
         {
         }
+
+        //Hides Base class implementation
+        //public new string GetDisplayText => Version;
+
+        //To override must use virtual in base case
+        public override string GetDisplayText => Version;
+
         public string Version { get; set; }
     }
 }
