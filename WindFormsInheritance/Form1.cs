@@ -42,5 +42,15 @@ namespace WindFormsInheritance
             }
             MessageBox.Show($"You checked {countChecked}");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Button myBtn = new Button();
+            myBtn.Text = "Click This";
+            myBtn.Size = new Size(100, 25);
+            myBtn.Location = new Point(10, 10);
+
+            this.Controls.Add(myBtn);
+        }
     }
 }
