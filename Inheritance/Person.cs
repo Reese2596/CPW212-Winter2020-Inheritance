@@ -14,14 +14,14 @@ namespace Inheritance
 
         public string Email { get; set; }
 
-        public abstract void Register(List<string> course);
+        public abstract void Register(params string[] course);
     }
 
     class Student : Person
     {
         public string Major { get; set; }
 
-        public override void Register(List<string> course)
+        public override void Register(params string[] course)
         {
             //Register Student for selected courses in database
             //Charge fees to accounts
@@ -33,7 +33,7 @@ namespace Inheritance
     {
         public string OfficeLocation { get; set; }
 
-        public override void Register(List<string> course)
+        public override void Register(params string[] course)
         {
             Console.WriteLine("Enjoy your Registration Discount");
         }

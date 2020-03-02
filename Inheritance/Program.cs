@@ -10,18 +10,47 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            Person p;
+            Console.WriteLine("Are you stu?");
+            string input = Console.ReadLine();
+            if(input == "yes" || input == "y")
+            {
+                p = new Student();
+                Console.WriteLine("What is your major?");
+                string major = Console.ReadLine();
+
+                Student currStu = p as Student;
+                currStu.Major = major;
+            }
+            else
+            {
+                p = new Faculty();
+            }
+            p.FullName = "Jane Doe";
+            p.Email = "Fake@fake.com";
+            p.Register("CPW101", "CPW150");
+
+            //ProductTesting();
+        }
+
+        private static void ProductTesting()
+        {
             Product p = new Product("XYZ")
             {
-                  Code = "Money"
-                , Description = ""
-                , Price = 999.99
+                Code = "Money"
+                            ,
+                Description = ""
+                            ,
+                Price = 999.99
             };
 
             Book b = new Book("ZYX")
             {
-                  Code = "ABC123"
-                , Description = ""
-                , Price = 9.99
+                Code = "ABC123"
+                ,
+                Description = ""
+                ,
+                Price = 9.99
                 //, Author = "Me"
             };
 
