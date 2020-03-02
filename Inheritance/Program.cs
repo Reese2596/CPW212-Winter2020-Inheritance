@@ -40,6 +40,12 @@ namespace Inheritance
 
         private static void DisplayProduct(Product p)
         {
+            //if(p.GetType == typeof(Book) or nameOf(Book))
+            int i = 5;
+            i++;
+            Console.WriteLine(i);
+            i++;
+
             if(p is Book)
             {
                 Book b = p as Book;
